@@ -8,6 +8,11 @@ class Inspector
     private int $hen2;
     private int $hen3;
 
+    /**
+     * @param int $hen1
+     * @param int $hen2
+     * @param int $hen3
+     */
     public function __construct(int $hen1, int $hen2, int $hen3)
     {
         $this->hen1 = $hen1;
@@ -15,6 +20,9 @@ class Inspector
         $this->hen3 = $hen3;
     }
 
+    /**
+     * @return string
+     */
     public function inspect(): string
     {
         if (! $this->isTriangleEdge()) {
