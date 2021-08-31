@@ -5,6 +5,6 @@ class SampleTest extends TestCase
 {
     public function testHello()
     {        
-        $this->assertTrue(false);
+        self::assertTrue(true);
     }
 }
